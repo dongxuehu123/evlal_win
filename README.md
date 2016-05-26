@@ -1,14 +1,16 @@
+#作者简介
 BLOG： http://blog.csdn.net/webxscan/ <br>
 BY：神龙 QQ:29295842 <br>
+#下载
 软件直接下载地址： <br>
-下载地址 http://eval.webxscan.com/download.html <br>
+http://eval.webxscan.com/download.html <br>
 大家的支持是我开发的动力 <br>
- <br>
-开山斧 WIN版本 <br>
-需要你安装  <br>
+
+#软件安装
+###Windows版本
 python 2.7x 32位PY  https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi <br>
 pyqt4 32位  https://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt4-4.11.4-gpl-Py2.7-Qt4.8.7-x32.exe <br>
-目录介绍 <br>
+#目录介绍 <br>
 Clicked_Controller  #事件响应 <br>
 Ui_View             #UI响应 <br>
 Db_Model            #数据库响应 <br>
