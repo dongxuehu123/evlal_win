@@ -136,6 +136,22 @@
      </rect>
     </property>
    </widget>
+   <widget class="QLabel" name="shell_add">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add OK:0--NO:0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
   </widget>
   <widget class="QPushButton" name="link_Button">
    <property name="geometry">
@@ -171,6 +187,9 @@
    </property>
    <property name="text">
     <string>url|pass</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>

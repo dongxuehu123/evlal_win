@@ -196,7 +196,6 @@ class Import_export_ui(QDialog):
 
     def Dexport(self,open_file): #导出数据
         try:
-            #self.main_ui
             type_id_id=self.type_id.currentIndex()
             type_id=self.list_data[type_id_id-1]  #获取ID
             sql_data = "select * from sitetable WHERE type_id='%s' order by `updatetime` desc"%(str(type_id))   # asc 表示升序 , desc表示降序
@@ -266,6 +265,8 @@ class Import_export_ui(QDialog):
                         i_ok+=1
                     else:
                         i_no+=1
+                    ss="add OK:%s--NO:%s"%(str(i_ok),str(i_no))
+                    self.shell_add.setText(ss)
                 except BaseException, e:
                     log.logging.debug("except:%s"%(str(e)))
             msg.msg_lower_Left(u"添加数据成功%s条  失败%s条"%(str(i_ok),str(i_no)))#设置状态栏文字信息

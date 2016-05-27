@@ -300,18 +300,6 @@ class main_ui(QtGui.QMainWindow):
         #2. os._exit(n), 直接退出, 不抛异常, 不执行相关清理工作. 常用在子进程的退出.
         #3. exit()/quit(), 跑出SystemExit异常. 一般在交互式shell中退出时使用.
         os._exit(1)
-
-        #event.accept()  #接受退出信号，程序退出
-
-        #event->ignore();  //忽略退出信号，程序继续运行
-        # if self.trayIcon.isVisible():
-        #     QMessageBox.information(self, u"感谢使用开山斧",
-        #                             u"<b>(以完善功能为荣，以突破安全防护软件为耻)(向中国菜刀作者致敬)</b>"
-        #                             u"如果本软件(开山斧)使用遇到问题或好的建议，请及时与本团队联系，谢谢！ 大家不断的支持是我们开发的动力。"
-        #                             u"http://eval.webxscan.com   开山斧QQ交流群：528392695")
-            #self.hide()
-            #event.ignore()
-    ##################################
     ########################################SHELL 右键 操作
     def tableWidget_menu(self,p):  #右键菜单
         try:
@@ -323,6 +311,18 @@ class main_ui(QtGui.QMainWindow):
                 action = QAction(QtGui.QIcon('system\\+.ico'),u'添加数据',self)
                 action.triggered.connect(lambda:self.add_shell_show(1))
                 self.popMenu.addAction(action)
+                self.popMenu.addSeparator()#添加分隔
+                self.name=self.popMenu.addMenu(u'批量导入/导出')
+                action = QAction(QtGui.QIcon('system\\Upload_files.ico'),u'批量导入数据',self)
+                action.triggered.connect(lambda:self.Import_export_ui_show(1))
+                self.name.addAction(action)
+                action = QAction(QtGui.QIcon('system\\Download_File.ico'),u'批量导出数据',self)
+                action.triggered.connect(lambda:self.Import_export_ui_show(2))
+                self.name.addAction(action)
+                action = QAction(QtGui.QIcon('system\\Download_File.ico'),u'选择导出数据',self)
+                action.triggered.connect(lambda:self.while_export_shell())
+                self.name.addAction(action)
+
             if sum>=1:   #如果选中1条  添加  删除  修改
                 action = QAction(QtGui.QIcon('system/ShowFileManage.ico'),u'文件管理',self)
                 action.triggered.connect(lambda:self.open_file_shell())
