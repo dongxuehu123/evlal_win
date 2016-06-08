@@ -3,6 +3,9 @@
 #作者简介
 BLOG： http://blog.csdn.net/webxscan/ <br>
 BY：神龙 QQ:29295842 <br>
+软件目前 参与者：xpro QQ:964683112 姓  郎     VER007 QQ:275708007<br>
+
+
 #下载
 软件直接下载地址： <br>
 http://eval.webxscan.com/download.html <br>
