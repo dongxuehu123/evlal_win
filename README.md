@@ -12,7 +12,7 @@ BY：神龙 QQ:29295842 <br>
 #下载
 软件直接下载地址： <br>
 http://eval.webxscan.com/download.html <br>
-大家的支持是我开发的动力 <br>
+大家的支持是我开发的动力!
 
 #目录结构<br>
 Clicked_Controller---事件响应<br>
