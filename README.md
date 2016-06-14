@@ -20,7 +20,8 @@ python main.py
 ubuntu默认自带python
 cd eval_win
 ```
-sudo python main.py
+$ sudo pip install maxminddb
+$ sudo python main.py
 
 ```
 #下载
