@@ -8,7 +8,21 @@ BY：神龙 QQ:29295842 <br>
 + xpro Email:langxm682@qq.com 
 + VER007 QQ:275708007<br>
 
+# 使用方法
+###windows
+下载并安装python2.7
+把python加入环境变量
+命令行到eval目录执行
+```
+python main.py
+```
+### Ubuntu
+ubuntu默认自带python
+cd eval_win
+```
+sudo python main.py
 
+```
 #下载
 软件直接下载地址： <br>
 http://eval.webxscan.com/download.html <br>

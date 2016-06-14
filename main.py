@@ -2,16 +2,8 @@
 #-*- coding: UTF-8 -*-
 
 from PyQt4 import QtCore, QtGui ,QtNetwork
-# from PyQt4.QtCore import *
-# from ctypes import *
-# from PyQt4 import uic
-# from PyQt4.QtGui import *
-# from PyQt4.QtCore import *
-#from PyQt4.QtWidgets import *
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
-#import socket
-#socket.setdefaulttimeout(10)
 
 import sys
 reload(sys)
@@ -46,8 +38,9 @@ class mywindow(QObject):
         tableWidget_work.tableWidget_ini()  #列表初始化
         treeWidget_work.reload_tree()  #加载目录
 
-        msg.msg_lower_Left(u"欢迎使用  http://eval.webxscan.com  软件出品 ")    #self.statusBar().showMessage("1111",3000)
-        tableWidget_work.add_tableWidget("0")   #查询数据 在添加##########################################
+        msg.msg_lower_Left(u"欢迎使用  http://eval.webxscan.com软件出品 ")    #self.statusBar().showMessage("1111",3000)
+        tableWidget_work.add_tableWidget("0")   
+	#查询数据 在添加##########################################
 
         g.pathx=str(sys.path[0])   #记录当前路径
         #读取LINK  链接超时
@@ -68,27 +61,19 @@ class mywindow(QObject):
 
 if __name__=="__main__":
     import sys
-    #app=QtWidgets.QApplication(sys.argv)
     app=QtGui.QApplication(sys.argv)
-    # myshow=mywindow()
-    # myshow.show()
     mywindow()
-    #=========================
-    try:
-        INI_config = ConfigParser.ConfigParser()
-        INI_config.readfp(open("system/Server.ini"))
-        if(int(INI_config.get('Action', 'declaraction'))==0): #选中
-            Action=Action_ui.Action_ui(1)#关于作者
-            if Action.exec_() == QtGui.QDialog.Accepted:
-                pass
-    except BaseException, e:
-        pass
+ #   try:
+  #      INI_config = ConfigParser.ConfigParser()
+   #     INI_config.readfp(open("system/Server.ini"))
+    #    if(int(INI_config.get('Action', 'declaraction'))==0): 
+#	    #如果说0代表用户同意协议
+#            Action=Action_ui.Action_ui(1)#关于作者
+ #           if Action.exec_() == QtGui.QDialog.Accepted:
+ #               pass
+  #  except BaseException, e:
+   #     pass
 
-        #RValues = dlg.GetOriginValue()
-        #self.setFocusPolicy(Qt.NoFocus)
-        #Action.show()
-        #Action.activateWindow()
-    #=========================
     sys.exit(app.exec_())
 
 

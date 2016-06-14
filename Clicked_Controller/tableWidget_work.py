@@ -104,6 +104,7 @@ def add_tableWidget(id):   #查询数据 在添加
         res = cur.fetchall()  #从结果中取出所有记录
         cur.close()  #关闭游标
         add_list_tableWidget(res)# 添加数据
+	print res
     except BaseException, e:
         log.logging.debug("except:%s"%(str(e)))
 
