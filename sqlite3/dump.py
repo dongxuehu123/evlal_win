@@ -1,4 +1,4 @@
-# Mimic the sqlite3 console shell's .dump command
+#123 Mimic the sqlite3 console shell's .dump command
 # Author: Paul Kippes <kippesp@gmail.com>
 
 # Every identifier in sql is quoted based on a comment in sqlite
